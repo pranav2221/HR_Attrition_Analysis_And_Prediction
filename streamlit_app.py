@@ -112,21 +112,28 @@ st.write(
 )
 
 st.subheader("📝 Explanation")
+
 reasons = []
 
 if years_at_company <= 2:
     reasons.append("Early career employee")
-    if overtime_val == 1:
-        reasons.append("Working overtime")
-    if job_satisfaction <= 2:
-        reasons.append("Low job satisfaction")
-    if work_life_balance <= 2:
-        reasons.append("Poor work-life balance")
-    if monthly_income < 4000:
-        reasons.append("Low monthly income")
 
-    if not reasons:
-        reasons.append("No strong attrition risk factors detected")
+if overtime_val == 1:
+    reasons.append("Working overtime")
 
-    for r in reasons:
-        st.write(f"- {r}")
+if job_satisfaction <= 2:
+    reasons.append("Low job satisfaction")
+
+if work_life_balance <= 2:
+    reasons.append("Poor work-life balance")
+
+if monthly_income < 4000:
+    reasons.append("Low monthly income")
+
+# ✅ IMPORTANT: Always show at least one explanation
+if not reasons:
+    reasons.append("No strong attrition risk factors detected")
+
+# Display explanations
+for reason in reasons:
+    st.write(f"- {reason}")
