@@ -81,17 +81,17 @@ HR_Attrition_Analysis_And_Prediction/
 │   └── HR_Attrition_SQL.csv
 │
 ├── FastAPI_Backend/
-│   ├── 01_app.py
-|
+│   └── app.py
+│
 ├── Jupyter_Notebooks/
 │   ├── HR_Employee_Attrition_EDA.ipynb
 │   └── Prediction_Model.ipynb
 │
-├── PowerBI_Dashboard/
-│   └── HR_ATTRITION_ANALYSIS_Dashboard.pbix
-│
 ├── SQL_Analysis/
 │   └── HR_Attrition.sql
+│
+├── PowerBI_Dashboard/
+│   └── HR_ATTRITION_ANALYSIS_Dashboard.pbix
 │
 ├── models/
 │   ├── decision_tree.pkl
@@ -99,10 +99,11 @@ HR_Attrition_Analysis_And_Prediction/
 │   ├── random_forest.pkl
 │   └── scaler.pkl
 │
-├──.gitignore
+├── .gitignore
 ├── README.md
 ├── requirements.txt
 └── streamlit_app.py
+
 
 📊 Key Insights from Analysis
 
@@ -199,3 +200,4 @@ Pranav Patil
 Aspiring Data Analyst / Machine Learning Enthusiast
 
 🔗 GitHub: https://github.com/pranav2221
+
