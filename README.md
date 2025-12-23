@@ -8,7 +8,7 @@ The project also includes an interactive Streamlit web application for real-time
 Employee attrition leads to increased hiring costs, loss of experienced talent, and reduced productivity. 
 Organizations often struggle to identify employees who are at risk of leaving at an early stage.
 
-# This project aims to:
+ This project aims to:
 
 Analyze key factors influencing employee attrition
 
@@ -210,3 +210,4 @@ Pranav Patil
 Aspiring Data Analyst / Machine Learning Enthusiast
 
 🔗 GitHub: https://github.com/pranav2221
+
