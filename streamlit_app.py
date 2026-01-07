@@ -34,7 +34,7 @@ with st.form("attrition_form"):
     monthly_income = st.number_input(
         "Monthly Income",
         min_value=1000,
-        max_value=20000,
+        max_value=150000,
         value=3500,
         step=500
     )
@@ -42,11 +42,13 @@ with st.form("attrition_form"):
     years_at_company = st.slider("Years at Company", 0, 40, 1)
 
     job_satisfaction = st.selectbox(
-        "Job Satisfaction (1 = Low, 4 = High)", [1, 2, 3, 4], index=1
+        "Job Satisfaction (1 = Low, 10 = High)",
+        list(range(1,11)), index=4
     )
 
     work_life_balance = st.selectbox(
-        "Work Life Balance (1 = Poor, 4 = Excellent)", [1, 2, 3, 4], index=1
+        "Work Life Balance (1 = Poor, 10 = Excellent)",
+        list(range(1,11)), index=4
     )
 
     overtime = st.radio("Works Overtime?", ["Yes", "No"])
